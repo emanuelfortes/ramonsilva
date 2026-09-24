@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import Reveal from "@/components/Reveal";
 import { WhatsIcon } from "@/components/Hero";
 import { contato } from "@/data/site";
 import { evento, eventoWhatsappLink } from "@/data/evento";
@@ -22,8 +23,13 @@ export const metadata: Metadata = {
 export default function EventoPage() {
   return (
     <main className="grain relative overflow-hidden bg-bg">
+      <Reveal />
+
       {/* Topo: logo + voltar */}
-      <header className="absolute inset-x-0 top-0 z-30 mx-auto flex w-full max-w-7xl items-center justify-between px-5 pt-6 sm:px-8 sm:pt-8">
+      <header
+        className="absolute inset-x-0 top-0 z-30 mx-auto flex w-full max-w-7xl items-center justify-between px-5 pt-6 sm:px-8 sm:pt-8"
+        data-reveal="fade-down"
+      >
         <Link href="/" aria-label="Ramon Silva Barbearia — voltar ao início">
           <Image
             src="/img/logo-white.png"
@@ -78,12 +84,15 @@ export default function EventoPage() {
 
         <div className="relative z-10 mx-auto w-full max-w-7xl px-5 pb-14 pt-[34svh] sm:px-8 sm:pb-20 lg:pt-0">
           <div className="lg:max-w-[46%]">
-            <p className="flex items-center gap-3 font-label text-xs uppercase tracking-[0.3em] text-gold sm:text-sm">
+            <p
+              className="flex items-center gap-3 font-label text-xs uppercase tracking-[0.3em] text-gold sm:text-sm"
+              data-reveal="fade-up"
+            >
               <span className="h-px w-6 bg-gold sm:w-8" aria-hidden="true" />
               {evento.chapeu}
             </p>
 
-            <h1 className="mt-4">
+            <h1 className="mt-4" data-reveal="fade-up" data-reveal-delay="100">
               <span className="block font-label text-3xl font-light uppercase tracking-[0.18em] text-fg sm:text-4xl md:text-5xl">
                 {evento.titulo}
               </span>
@@ -92,7 +101,11 @@ export default function EventoPage() {
               </span>
             </h1>
 
-            <p className="mt-5 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
+            <p
+              className="mt-5 max-w-xl text-base leading-relaxed text-muted sm:text-lg"
+              data-reveal="fade-up"
+              data-reveal-delay="200"
+            >
               {evento.resumo}
             </p>
 
@@ -100,6 +113,8 @@ export default function EventoPage() {
               href={eventoWhatsappLink}
               target="_blank"
               rel="noopener noreferrer"
+              data-reveal="fade-up"
+              data-reveal-delay="300"
               className="mt-8 inline-flex w-full items-center justify-center gap-3 rounded-full bg-gold px-8 py-4 font-label text-xs font-semibold uppercase tracking-[0.2em] text-bg shadow-[0_0_40px_-10px_var(--gold)] transition hover:bg-gold-light sm:w-auto sm:text-sm"
             >
               <WhatsIcon />
@@ -112,10 +127,12 @@ export default function EventoPage() {
       {/* Números do dia */}
       <section className="relative border-y border-line bg-bg-soft">
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-px bg-line sm:grid-cols-4">
-          {evento.numeros.map((n) => (
+          {evento.numeros.map((n, i) => (
             <div
               key={n.rotulo}
               className="flex flex-col items-center gap-1 bg-bg-soft px-4 py-8 text-center sm:py-10"
+              data-reveal="fade-up"
+              data-reveal-delay={i * 90}
             >
               <span className="gold-text text-3xl font-semibold sm:text-4xl">
                 {n.valor}
@@ -130,7 +147,7 @@ export default function EventoPage() {
 
       {/* Programação do dia */}
       <section className="relative mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-24">
-        <div className="max-w-2xl">
+        <div className="max-w-2xl" data-reveal="fade-up">
           <p className="font-label text-xs uppercase tracking-[0.3em] text-gold">
             Como funciona o dia
           </p>
@@ -140,10 +157,12 @@ export default function EventoPage() {
         </div>
 
         <ol className="mt-10 space-y-5 sm:mt-14 sm:space-y-6">
-          {evento.programacao.map((item) => (
+          {evento.programacao.map((item, i) => (
             <li
               key={item.titulo}
               className="rounded-2xl border border-line bg-bg-card p-5 transition hover:border-gold/50 sm:p-7"
+              data-reveal="fade-up"
+              data-reveal-delay={(i % 3) * 80}
             >
               <div className="flex flex-wrap items-center gap-2">
                 <span className="rounded-full bg-gold px-3 py-1 font-label text-[10px] uppercase tracking-[0.2em] text-bg">
@@ -168,7 +187,7 @@ export default function EventoPage() {
       {/* Bônus + fotos dos cortes */}
       <section className="relative border-t border-line bg-bg-soft">
         <div className="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:px-8 sm:py-24 lg:grid-cols-2 lg:items-center lg:gap-16">
-          <div>
+          <div data-reveal="fade-right">
             <span className="inline-block rounded-full border border-gold/40 px-3 py-1 font-label text-[10px] uppercase tracking-[0.2em] text-gold">
               {evento.bonus.etiqueta}
             </span>
@@ -190,7 +209,7 @@ export default function EventoPage() {
             </ul>
           </div>
 
-          <div className="grid grid-cols-2 gap-3 sm:gap-4">
+          <div className="grid grid-cols-2 gap-3 sm:gap-4" data-reveal="fade-left">
             {evento.galeria.map((foto) => (
               <div
                 key={foto.src}
@@ -212,10 +231,17 @@ export default function EventoPage() {
       {/* Chamada final */}
       <section className="relative border-t border-line">
         <div className="mx-auto max-w-7xl px-5 py-16 text-center sm:px-8 sm:py-24">
-          <h2 className="font-label text-2xl font-light uppercase tracking-[0.12em] text-fg sm:text-4xl">
+          <h2
+            className="font-label text-2xl font-light uppercase tracking-[0.12em] text-fg sm:text-4xl"
+            data-reveal="fade-up"
+          >
             {evento.ctaTitulo}
           </h2>
-          <p className="mx-auto mt-4 max-w-md text-sm text-muted sm:text-base">
+          <p
+            className="mx-auto mt-4 max-w-md text-sm text-muted sm:text-base"
+            data-reveal="fade-up"
+            data-reveal-delay="100"
+          >
             {evento.ctaTexto}
           </p>
 
@@ -223,6 +249,8 @@ export default function EventoPage() {
             href={eventoWhatsappLink}
             target="_blank"
             rel="noopener noreferrer"
+            data-reveal="fade-up"
+            data-reveal-delay="200"
             className="mt-8 inline-flex w-full items-center justify-center gap-3 rounded-full bg-gold px-8 py-4 font-label text-xs font-semibold uppercase tracking-[0.2em] text-bg shadow-[0_0_40px_-10px_var(--gold)] transition hover:bg-gold-light sm:w-auto sm:text-sm"
           >
             <WhatsIcon />

@@ -46,12 +46,12 @@ export default function Hero() {
         <div className="lg:max-w-[48%]">
           <p
             className="text-center font-label text-xs uppercase tracking-[0.35em] text-gold sm:text-sm lg:text-left"
-            data-aos="fade-up"
+            data-reveal="fade-up"
           >
             Curso presencial · Turmas reduzidas
           </p>
 
-          <h1 className="mt-4 text-center lg:mt-5 lg:text-left" data-aos="fade-up" data-aos-delay="100">
+          <h1 className="mt-4 text-center lg:mt-5 lg:text-left" data-reveal="fade-up" data-reveal-delay="100">
             <span className="block font-label text-3xl font-light uppercase tracking-[0.18em] text-fg sm:text-4xl md:text-5xl">
               Curso de Barbeiro
             </span>
@@ -62,8 +62,8 @@ export default function Hero() {
 
           <p
             className="mt-5 max-w-xl text-base leading-relaxed text-muted sm:text-lg lg:mt-6"
-            data-aos="fade-up"
-            data-aos-delay="200"
+            data-reveal="fade-up"
+            data-reveal-delay="200"
           >
             Do zero à cadeira: 16 aulas presenciais com Ramon Silva, teoria do maquinário e
             prática em modelos reais. Saia cortando, regulando sua própria máquina e com
@@ -72,8 +72,8 @@ export default function Hero() {
 
           <div
             className="mt-8 flex flex-wrap gap-4 lg:mt-9"
-            data-aos="fade-up"
-            data-aos-delay="300"
+            data-reveal="fade-up"
+            data-reveal-delay="300"
           >
             <a
               href={whatsappLink}

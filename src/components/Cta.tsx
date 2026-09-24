@@ -16,7 +16,7 @@ export default function Cta() {
         <div className="absolute inset-0 bg-gradient-to-b from-bg via-bg/70 to-bg" />
       </div>
 
-      <div className="relative z-10 mx-auto max-w-3xl px-5 text-center sm:px-8" data-aos="zoom-in">
+      <div className="relative z-10 mx-auto max-w-3xl px-5 text-center sm:px-8" data-reveal="zoom-in">
         <p className="font-label text-xs uppercase tracking-[0.35em] text-gold">Vagas limitadas</p>
         <h2 className="mt-4 font-script text-6xl leading-[1.05] sm:text-7xl md:text-8xl">
           <span className="text-fg">Sua cadeira</span>{" "}

@@ -40,8 +40,8 @@ function VideoCard({ src, poster, titulo, delay }: (typeof videos)[number] & { d
   return (
     <figure
       className="group relative overflow-hidden rounded-2xl border border-line bg-bg-card"
-      data-aos="fade-up"
-      data-aos-delay={delay}
+      data-reveal="fade-up"
+      data-reveal-delay={delay}
     >
       <div className="relative aspect-[9/16]">
         <video

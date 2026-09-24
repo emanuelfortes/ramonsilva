@@ -6,7 +6,7 @@ export default function Professor() {
   return (
     <section id="professor" className="relative overflow-hidden py-24 sm:py-32">
       <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 sm:px-8 lg:grid-cols-2">
-        <div className="relative mx-auto w-full max-w-md" data-aos="fade-right">
+        <div className="relative mx-auto w-full max-w-md" data-reveal="fade-right">
           <div className="absolute -inset-3 rounded-3xl border border-gold/30" />
           <div className="relative overflow-hidden rounded-2xl">
             <Image
@@ -20,7 +20,7 @@ export default function Professor() {
           </div>
         </div>
 
-        <div data-aos="fade-left">
+        <div data-reveal="fade-left">
           <p className="font-label text-xs uppercase tracking-[0.35em] text-gold">Seu professor</p>
           <h2 className="mt-3 font-script text-6xl leading-[1.05] text-fg sm:text-7xl md:text-8xl">
             Ramon Silva

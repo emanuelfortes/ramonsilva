@@ -16,8 +16,8 @@ export default function Curso() {
             <article
               key={m.titulo}
               className="group relative overflow-hidden rounded-2xl border border-line bg-bg-card p-8 transition hover:border-gold/60 sm:p-10"
-              data-aos="fade-up"
-              data-aos-delay={i * 150}
+              data-reveal="fade-up"
+              data-reveal-delay={i * 150}
             >
               <span className="absolute -right-4 -top-6 font-script text-[9rem] leading-none text-fg/[0.04] transition group-hover:text-gold/10">
                 {i + 1}
@@ -44,8 +44,8 @@ export default function Curso() {
             <div
               key={b.titulo}
               className="rounded-2xl border border-line p-7"
-              data-aos="fade-up"
-              data-aos-delay={i * 100}
+              data-reveal="fade-up"
+              data-reveal-delay={i * 100}
             >
               <div className="mb-5 h-10 w-10 rounded-full border border-gold/50 p-2.5 text-gold">
                 <Icons index={i} />

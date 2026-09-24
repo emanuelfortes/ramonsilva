@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import AosInit from "@/components/AosInit";
+import Reveal from "@/components/Reveal";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Curso from "@/components/Curso";
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 export default function CursoPage() {
   return (
     <main>
-      <AosInit />
+      <Reveal />
       <Header />
       <Hero />
       <Curso />

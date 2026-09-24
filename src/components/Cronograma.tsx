@@ -23,7 +23,7 @@ export default function Cronograma() {
                 className={`relative mb-12 pl-14 sm:w-1/2 sm:pl-0 ${
                   left ? "sm:pr-14 sm:text-right" : "sm:ml-auto sm:pl-14"
                 }`}
-                data-aos={left ? "fade-right" : "fade-left"}
+                data-reveal={left ? "fade-right" : "fade-left"}
               >
                 {/* marcador */}
                 <span
@@ -46,7 +46,7 @@ export default function Cronograma() {
 
         <div
           className="mx-auto mt-6 max-w-3xl rounded-2xl border border-gold/30 bg-gold/5 p-6 text-center sm:p-8"
-          data-aos="zoom-in"
+          data-reveal="zoom-in"
         >
           <p className="font-label text-xs uppercase tracking-[0.3em] text-gold">O que você vai aprender</p>
           <p className="mt-3 text-fg">
