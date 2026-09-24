@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "aos/dist/aos.css";
+@import "./surreal.css";
 
 /* Paleta tirada da logo e da fachada: preto, off-white e dourado */
 :root {

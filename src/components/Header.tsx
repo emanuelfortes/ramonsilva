@@ -33,7 +33,7 @@ export default function Header() {
       } ${scrolled ? "py-3" : "py-5"}`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 sm:px-8">
-        <Link href="#topo" aria-label="Ramon Silva Barbeiro">
+        <Link href="/" aria-label="Ramon Silva Barbeiro — voltar ao início">
           <Image
             src="/img/logo-white.png"
             alt="Ramon Silva Barbeiro"

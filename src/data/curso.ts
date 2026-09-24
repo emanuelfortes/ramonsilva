@@ -1,17 +1,11 @@
-// Toda a copy da landing page fica aqui. Edite este arquivo para trocar textos,
-// telefone do WhatsApp e redes sociais sem mexer nos componentes.
+// Toda a copy da landing do curso fica aqui. Edite este arquivo para trocar os
+// textos sem mexer nos componentes. Contato e redes ficam em src/data/site.ts.
 
-export const contato = {
-  whatsapp: "5585988905202", // DDI + DDD + número, só dígitos — (85) 98890-5202
-  whatsappMensagem:
-    "Olá, Ramon! Quero saber mais sobre o Curso de Barbeiro Iniciante.",
-  instagram: "https://instagram.com/ramonsilvabarbearia",
-  cidade: "Fortaleza - CE",
-};
+import { contato, montarWhatsapp } from "./site";
 
-export const whatsappLink = `https://wa.me/${contato.whatsapp}?text=${encodeURIComponent(
-  contato.whatsappMensagem
-)}`;
+export { contato };
+
+export const whatsappLink = montarWhatsapp(contato.whatsappMensagem);
 
 export const numeros = [
   { valor: "16", rotulo: "aulas presenciais" },

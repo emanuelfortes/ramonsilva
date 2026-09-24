@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { siteUrl } from "@/data/site";
 import "./globals.css";
 
 // Título: script parecido com o lettering "Ramon Silva" da logo
@@ -34,14 +35,17 @@ const josefin = localFont({
   display: "swap",
 });
 
+// Metadados padrão do site inteiro. Cada página sobrescreve o que for dela.
 export const metadata: Metadata = {
-  title: "Curso de Barbeiro Iniciante | Ramon Silva Barbeiro",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Ramon Silva Barbeiro | Barbearia, curso e eventos em Fortaleza",
+    template: "%s | Ramon Silva Barbeiro",
+  },
   description:
-    "Curso presencial de barbeiro iniciante com Ramon Silva: 16 aulas, teoria e prática em modelos reais, certificado de conclusão e suporte técnico após o curso.",
+    "Tudo do Ramon Silva Barbeiro em um lugar só: vaga aberta na barbearia, curso de barbeiro iniciante e os próximos eventos.",
   openGraph: {
-    title: "Curso de Barbeiro Iniciante | Ramon Silva Barbeiro",
-    description:
-      "16 aulas presenciais, 2 por semana, teoria e prática com modelos reais. Certificado + suporte técnico.",
+    siteName: "Ramon Silva Barbeiro",
     images: ["/img/ramon-2.jpg"],
     locale: "pt_BR",
     type: "website",
