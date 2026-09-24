@@ -44,9 +44,10 @@ export const metadata: Metadata = {
   },
   description:
     "Tudo do Ramon Silva Barbeiro em um lugar só: vaga aberta na barbearia, curso de barbeiro iniciante e os próximos eventos.",
+  twitter: { card: "summary_large_image" },
   openGraph: {
     siteName: "Ramon Silva Barbeiro",
-    images: ["/img/ramon-2.jpg"],
+    images: [{ url: "/og/hub.jpg", width: 1200, height: 630, alt: "Ramon Silva Barbearia" }],
     locale: "pt_BR",
     type: "website",
   },

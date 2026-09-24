@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description:
       "16 aulas presenciais, 2 por semana, teoria e prática com modelos reais. Certificado + suporte técnico.",
     url: "/curso",
-    images: ["/img/ramon-2.jpg"],
+    images: [{ url: "/og/curso.jpg", width: 1200, height: 630, alt: "Curso de Barbeiro Iniciante com Ramon Silva" }],
     locale: "pt_BR",
     type: "website",
   },

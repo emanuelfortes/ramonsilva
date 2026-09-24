@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description:
       "Demonstração de técnicas pela manhã, prática em modelos à tarde e certificado no fim do dia.",
     url: "/evento",
-    images: ["/img/ramon-2.jpg"],
+    images: [{ url: "/og/evento.jpg", width: 1200, height: 630, alt: "Curso pratico de aperfeicoamento com Ramon Silva" }],
   },
 };
 

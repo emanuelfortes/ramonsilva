@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     description:
       "Vaga aberta na barbearia, curso de barbeiro iniciante e o curso prático de um dia. Tudo em um lugar só.",
     url: "/",
-    images: ["/img/ramon-2.jpg"],
+    images: [{ url: "/og/hub.jpg", width: 1200, height: 630, alt: "Ramon Silva Barbearia" }],
   },
 };
 

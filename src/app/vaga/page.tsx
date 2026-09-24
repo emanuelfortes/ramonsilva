@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description:
       "Vaga aberta na Ramon Silva Barbearia. Candidate-se pelo WhatsApp.",
     url: "/vaga",
-    images: ["/img/ramonhero4k.png"],
+    images: [{ url: "/og/vaga.jpg", width: 1200, height: 630, alt: "Vaga aberta para barbeiro na Ramon Silva Barbearia" }],
   },
 };
 
