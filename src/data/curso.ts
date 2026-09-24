@@ -90,9 +90,9 @@ export const beneficios = [
 ];
 
 export const videos = [
-  { src: "/video/corte-1.mp4", poster: "/img/poster-1.jpg", titulo: "Pompadour moderno" },
-  { src: "/video/corte-2.mp4", poster: "/img/poster-2.jpg", titulo: "Low Fade Buzz Cut" },
-  { src: "/video/corte-3.mp4", poster: "/img/poster-3.jpg", titulo: "Low Drop Fade" },
+  { src: "/video/corte-1.mp4", poster: "/img/poster-1.webp", titulo: "Pompadour moderno" },
+  { src: "/video/corte-2.mp4", poster: "/img/poster-2.webp", titulo: "Low Fade Buzz Cut" },
+  { src: "/video/corte-3.mp4", poster: "/img/poster-3.webp", titulo: "Low Drop Fade" },
 ];
 
 export const faq = [

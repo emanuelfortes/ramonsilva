@@ -10,7 +10,7 @@ export default function Professor() {
           <div className="absolute -inset-3 rounded-3xl border border-gold/30" />
           <div className="relative overflow-hidden rounded-2xl">
             <Image
-              src="/img/ramonperfil.png"
+              src="/img/ramonperfil.webp"
               alt="Ramon Silva na barbearia"
               width={1122}
               height={1402}

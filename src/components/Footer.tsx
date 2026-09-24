@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="border-t border-line bg-bg">
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-8 px-5 py-12 sm:px-8 md:flex-row md:justify-between">
         <Image
-          src="/img/logo-white.png"
+          src="/img/logo-white.webp"
           alt="Ramon Silva Barbeiro"
           width={1851}
           height={626}

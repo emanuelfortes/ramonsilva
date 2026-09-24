@@ -35,7 +35,7 @@ export default function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 sm:px-8">
         <Link href="/" aria-label="Ramon Silva Barbeiro — voltar ao início">
           <Image
-            src="/img/logo-white.png"
+            src="/img/logo-white.webp"
             alt="Ramon Silva Barbeiro"
             width={1851}
             height={626}

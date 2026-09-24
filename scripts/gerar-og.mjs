@@ -17,7 +17,8 @@ const ALTURA = 630;
 const PROPORCAO = LARGURA / ALTURA;
 
 const raiz = process.cwd();
-const img = (nome) => path.join(raiz, "public", "img", nome);
+// Lê dos originais, não do WebP servido: o card já é uma segunda compressão.
+const img = (nome) => path.join(raiz, "assets", "originais", nome);
 const saida = path.join(raiz, "public", "og");
 
 /**
@@ -30,7 +31,7 @@ const cards = [
   { nome: "hub", foto: img("ramonhero4k.png"), foco: [0.59, 0.39], logo: true, sombra: 0.9 },
   { nome: "curso", foto: img("ramonhero4k.png"), foco: [0.59, 0.39], logo: true, sombra: 0.9 },
   { nome: "vaga", foto: img("ramon-1.jpg"), foco: [0.6, 0.42], logo: false, sombra: 0.4 },
-  { nome: "evento", foto: img("ramon-2.jpg"), foco: [0.6, 0.4], logo: true, sombra: 0.9 },
+  { nome: "evento", foto: img("ramonhero4k.png"), foco: [0.59, 0.39], logo: true, sombra: 0.9 },
 ];
 
 const veu = (sombra) =>

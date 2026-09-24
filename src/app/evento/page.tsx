@@ -32,7 +32,7 @@ export default function EventoPage() {
       >
         <Link href="/" aria-label="Ramon Silva Barbearia — voltar ao início">
           <Image
-            src="/img/logo-white.png"
+            src="/img/logo-white.webp"
             alt="Ramon Silva Barbearia"
             width={1851}
             height={626}
@@ -55,11 +55,11 @@ export default function EventoPage() {
         {/* Foto sangrando no topo — mobile e tablet */}
         <div className="absolute inset-x-0 top-0 h-[58svh] overflow-hidden lg:hidden">
           <Image
-            src="/img/ramon-2.jpg"
-            alt="Ramon Silva demonstrando a técnica de corte"
+            src="/img/ramonhero4k.webp"
+            alt="Ramon Silva cortando cabelo na barbearia"
             fill
             priority
-            className="object-cover object-[55%_35%]"
+            className="object-cover object-[70%_50%]"
             sizes="(min-width: 1024px) 1px, 100vw"
           />
           {/* Escurece o topo para o logo e o botão continuarem legíveis */}
@@ -71,11 +71,11 @@ export default function EventoPage() {
         {/* Foto na metade direita — desktop */}
         <div className="absolute inset-y-0 right-0 hidden w-[52%] overflow-hidden lg:block">
           <Image
-            src="/img/ramon-2.jpg"
-            alt="Ramon Silva demonstrando a técnica de corte"
+            src="/img/ramonhero4k.webp"
+            alt="Ramon Silva cortando cabelo na barbearia"
             fill
             priority
-            className="object-cover object-[52%_40%]"
+            className="object-cover object-[62%_50%]"
             sizes="(min-width: 1024px) 55vw, 1px"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-bg from-0% via-bg/55 via-24% to-transparent to-68%" />

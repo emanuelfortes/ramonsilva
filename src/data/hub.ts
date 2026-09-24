@@ -20,7 +20,7 @@ export const hubLinks: HubLink[] = [
     titulo: "Trabalhe na barbearia",
     descricao:
       "Estamos contratando barbeiro. Veja o perfil que procuramos e fale com a gente pelo WhatsApp.",
-    imagem: "/img/ramonhero4k.png",
+    imagem: "/img/ramonhero4k.webp",
     destaque: true,
   },
   {
@@ -29,7 +29,7 @@ export const hubLinks: HubLink[] = [
     titulo: "Curso de Barbeiro Iniciante",
     descricao:
       "16 aulas presenciais, prática em modelos reais, certificado de conclusão e suporte depois do curso.",
-    imagem: "/img/ramon-2.jpg",
+    imagem: "/img/ramon-2.webp",
   },
   {
     href: "/evento",
@@ -37,7 +37,7 @@ export const hubLinks: HubLink[] = [
     titulo: "Curso Prático de Aperfeiçoamento",
     descricao:
       "Dois cortes demonstrados pelo professor de manhã, a máquina na sua mão à tarde e certificado no fim do dia.",
-    imagem: "/img/outros-cortes2.jpeg",
+    imagem: "/img/outros-cortes2.webp",
   },
 ];
 
@@ -45,5 +45,5 @@ export const perfil = {
   nome: "Ramon Silva",
   titulo: "Barbeiro",
   bio: "Barbearia, formação e eventos em Fortaleza. Escolha abaixo o que você procura.",
-  foto: "/img/ramonhero4k.png",
+  foto: "/img/ramonhero4k.webp",
 };

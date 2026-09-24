@@ -28,7 +28,7 @@ export default function VagaPage() {
       {/* Foto sangrando por trás de tudo — mobile e tablet */}
       <div className="absolute inset-0 lg:hidden">
         <Image
-          src="/img/ramonhero4k.png"
+          src="/img/ramonhero4k.webp"
           alt="Ramon Silva cortando cabelo na barbearia"
           fill
           priority
@@ -44,7 +44,7 @@ export default function VagaPage() {
       <div className="absolute inset-y-0 right-0 hidden w-[52%] overflow-hidden lg:block">
         <div className="absolute inset-x-0 -top-[18%] h-[136%]">
           <Image
-            src="/img/ramonhero4k.png"
+            src="/img/ramonhero4k.webp"
             alt="Ramon Silva cortando cabelo na barbearia"
             fill
             priority
@@ -63,7 +63,7 @@ export default function VagaPage() {
       >
         <Link href="/" aria-label="Ramon Silva Barbearia — voltar ao início">
           <Image
-            src="/img/logo-white.png"
+            src="/img/logo-white.webp"
             alt="Ramon Silva Barbearia"
             width={1851}
             height={626}

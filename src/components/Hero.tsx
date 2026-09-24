@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="absolute inset-x-0 top-0 h-[64svh] overflow-hidden lg:hidden">
         <div className="absolute inset-x-0 -top-[4%] h-[112%]">
           <Image
-            src="/img/ramonhero4k.png"
+            src="/img/ramonhero4k.webp"
             alt="Ramon Silva cortando cabelo"
             fill
             priority
@@ -30,7 +30,7 @@ export default function Hero() {
         {/* Caixa maior que o painel: aproxima o enquadramento no Ramon */}
         <div className="absolute inset-x-0 -top-[22%] h-[142%]">
           <Image
-            src="/img/ramonhero4k.png"
+            src="/img/ramonhero4k.webp"
             alt="Ramon Silva cortando cabelo"
             fill
             priority

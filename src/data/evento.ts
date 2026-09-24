@@ -65,8 +65,8 @@ export const evento = {
   },
 
   galeria: [
-    { src: "/img/outros-cortes2.jpeg", alt: "Side part com degradê na navalha" },
-    { src: "/img/outros-cortes.jpeg", alt: "Taper baixo finalizado na nuca" },
+    { src: "/img/outros-cortes2.webp", alt: "Side part com degradê na navalha" },
+    { src: "/img/outros-cortes.webp", alt: "Taper baixo finalizado na nuca" },
   ],
 
   ctaTitulo: "Quer garantir sua vaga?",

@@ -7,7 +7,7 @@ export default function Cta() {
     <section id="inscricao" className="grain relative overflow-hidden py-28 sm:py-36">
       <div className="absolute inset-0">
         <Image
-          src="/img/poster-1.jpg"
+          src="/img/poster-1.webp"
           alt=""
           fill
           className="object-cover opacity-20"

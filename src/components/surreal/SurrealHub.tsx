@@ -128,7 +128,7 @@ export default function SurrealHub() {
           aria-label="Ramon Silva Barbearia"
         >
           <Image
-            src="/img/logo-white.png"
+            src="/img/logo-white.webp"
             alt="Ramon Silva Barbearia"
             width={1851}
             height={626}
